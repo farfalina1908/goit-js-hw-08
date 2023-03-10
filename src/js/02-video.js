@@ -5,7 +5,7 @@ const iframe = document.querySelector('iframe');
 const player = new Player(iframe);
 
 player.on('play', function() {
-    localStorage.setItem('videoplayer-current-time'), 1000;
+    localStorage.setItem('videoplayer-current-time', JSON.stringify(data)), 1000;
 });
 
 const onPlay = function(data) {
